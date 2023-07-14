@@ -11,7 +11,7 @@ Resources:
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: "lam-integration-test-role"
+      RoleName: "lam-integration-role"
       Description: "Role assigned to lambdas"
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
@@ -23,20 +23,17 @@ Resources:
             Action:
               - 'sts:AssumeRole'
       Policies:
-        - PolicyName: lam-integration-test-policy
+        - PolicyName: lam-integration-policy
           PolicyDocument:
             Version: "2012-10-17"
             Statement:
               - Effect: Allow
                 Action:
-                  - 's3:PutObject'
                   - 's3:GetObject'
                   - 's3:ListBucket'
-                  - 's3:GetBucketAcl'
-                  - 's3:GetBucketLocation'
                   - 's3:GetBucketPolicy'
                 Resource: 
-                  - !Join ['',['arn:aws:s3:::', !Ref S3ArtifactStore, '/*']]
+                  - !Join [['arn:aws:s3:::', !Ref S3ArtifactStore, ''],['arn:aws:s3:::', !Ref S3ArtifactStore, '/*']]
 
   # Lambda
   Lambda:
