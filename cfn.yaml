@@ -42,7 +42,7 @@ Resources:
     Properties:
       Architectures:
         - arm64
-      FunctionName: "lam-integration-test"
+      FunctionName: "lam-integration"
       Description: "lam-integration"
       Code: ./
       Handler: main.handler
