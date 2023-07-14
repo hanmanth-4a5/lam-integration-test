@@ -11,7 +11,7 @@ Resources:
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: "cfn-to-ci-lambda-role"
+      RoleName: "lam-integration-test-role"
       Description: "Role assigned to lambdas"
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
@@ -23,7 +23,7 @@ Resources:
             Action:
               - 'sts:AssumeRole'
       Policies:
-        - PolicyName: root
+        - PolicyName: lam-integration-test-policy
           PolicyDocument:
             Version: "2012-10-17"
             Statement:
@@ -36,12 +36,12 @@ Resources:
   Lambda:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: "cfn-to-ci-lambda"
-      Description: "Lambda example"
+      FunctionName: "lam-integration-test"
+      Description: "lam-integration"
       Code: ./
       Handler: lambda.handler
-      Runtime: python3.9
-      Timeout: 900
+      Runtime: python3.8
+      Timeout: 60
       Role: !GetAtt LambdaRole.Arn
       PackageType: Zip
       MemorySize: 128
