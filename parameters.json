@@ -1,0 +1,26 @@
+[
+  {
+    "ParameterKey": "CodebuildRoleArn",
+    "ParameterValue": "arn:aws:iam::179750807597:role/codebuild"
+  },
+  {
+    "ParameterKey": "CloudformationRoleArn",
+    "ParameterValue": "arn:aws:iam::179750807597:role/cloudformation"
+  },
+  {
+    "ParameterKey": "CodepipelineRoleArn",
+    "ParameterValue": "arn:aws:iam::179750807597:role/codepipeline"
+  },
+  {
+    "ParameterKey": "S3ArtifactStore",
+    "ParameterValue": "abhinandan-ci-lambda-001"
+  },
+  {
+    "ParameterKey": "GithubConnectionArn",
+    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:179750807597:connection/9b071c03-1751-4ff5-9c06-c35a0e1d48c4"
+  },
+  {
+    "ParameterKey": "GithubRepositoryName",
+    "ParameterValue": "hanmanth-4a5/cfn-ci-to-lambda"
+  }
+]
