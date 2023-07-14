@@ -1,5 +1,5 @@
 {
  "Parameters": {
-  "S3ArtifactStore": "abhinandan-ci-lambda-001"
+  "S3ArtifactStore": "archives-icici"
  }
 }  
