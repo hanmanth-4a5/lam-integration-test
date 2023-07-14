@@ -1,26 +1,26 @@
 [
   {
     "ParameterKey": "CodebuildRoleArn",
-    "ParameterValue": "arn:aws:iam::179750807597:role/codebuild"
+    "ParameterValue": "arn:aws:iam::690379282706:role/lam-integration-codebuild"
   },
   {
     "ParameterKey": "CloudformationRoleArn",
-    "ParameterValue": "arn:aws:iam::179750807597:role/cloudformation"
+    "ParameterValue": "arn:aws:iam::690379282706:role/lam-integration-cloudformation"
   },
   {
     "ParameterKey": "CodepipelineRoleArn",
-    "ParameterValue": "arn:aws:iam::179750807597:role/codepipeline"
+    "ParameterValue": "arn:aws:iam::690379282706:role/lam-integration-codepipeline"
   },
   {
     "ParameterKey": "S3ArtifactStore",
-    "ParameterValue": "abhinandan-ci-lambda-001"
+    "ParameterValue": "archives-icici"
   },
   {
     "ParameterKey": "GithubConnectionArn",
-    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:179750807597:connection/9b071c03-1751-4ff5-9c06-c35a0e1d48c4"
+    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:690379282706:connection/01bb50f3-4f37-4310-80fa-ac922ec88748"
   },
   {
     "ParameterKey": "GithubRepositoryName",
-    "ParameterValue": "hanmanth-4a5/cfn-ci-to-lambda"
+    "ParameterValue": "hanmanth-4a5/lam-integration-test"
   }
 ]
