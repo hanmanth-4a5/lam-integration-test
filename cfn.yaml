@@ -33,7 +33,8 @@ Resources:
                   - 's3:ListBucket'
                   - 's3:GetBucketPolicy'
                 Resource: 
-                  - !Join ['',['arn:aws:s3:::', !Ref S3ArtifactStore, ''],['arn:aws:s3:::', !Ref S3ArtifactStore, '/*']]
+                  - !Join ['',['arn:aws:s3:::', !Ref S3ArtifactStore, '']]
+                  - !Join ['',['arn:aws:s3:::', !Ref S3ArtifactStore, '/*']]
 
   # Lambda
   Lambda:
