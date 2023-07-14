@@ -43,7 +43,7 @@ Resources:
     Type: AWS::CodeBuild::Project
     DeletionPolicy : Retain
     Properties:
-      Name: "cfn-ci-to-lambda-cb"
+      Name: "lambda-integration-cb"
       # artifacts are settings for files outputted after running this codebuild e.g. an executable file
       Artifacts:
         Type: CODEPIPELINE
@@ -78,7 +78,7 @@ Resources:
     Type: AWS::CodePipeline::Pipeline
     DeletionPolicy : Retain
     Properties:
-      Name: "cfn-ci-to-lambda-cp"
+      Name: "lambda-integration-cp"
       ArtifactStore: # specifies the s3 bucket where artifacts (files) from this pipeline should be stored
         Type: S3
         Location: !Ref S3ArtifactStore
@@ -130,7 +130,7 @@ Resources:
                 Provider: CloudFormation
                 Version: '1'
               Configuration:
-                StackName: !Sub "cfn-ci-to-lambda-stack"
+                StackName: !Sub "lambda-integration-stack"
                 ActionMode: CREATE_UPDATE
                 Capabilities: CAPABILITY_IAM,CAPABILITY_NAMED_IAM
                 RoleArn: !Ref CloudformationRoleArn
