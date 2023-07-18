@@ -15,7 +15,7 @@ Parameters:
     Description: Name of S3 bucket
   S3BuildsPrefix:
     Type: String
-    Default: lam-integration/builds/
+    Default: builds/
     Description: Location of lambda builds in S3 Bucket
   TemplateFileName:
     Type: String
