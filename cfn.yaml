@@ -40,6 +40,12 @@ Resources:
   Lambda:
     Type: AWS::Lambda::Function
     Properties:
+      VpcConfig:
+        SecurityGroupIds:
+          - sg-01cc1b2ae3c352d4f
+        SubnetIds:
+          - subnet-0f467d2099ef9a1ba
+          - subnet-0233a571f4e3de8d5
       Architectures:
         - arm64
       FunctionName: "lam-integration"
