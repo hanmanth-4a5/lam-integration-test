@@ -51,3 +51,5 @@ Resources:
       Role: !GetAtt LambdaRole.Arn
       PackageType: Zip
       MemorySize: 128
+      Layers:
+        - arn:aws:lambda:ap-south-1:690379282706:layer:lam-integration:1
