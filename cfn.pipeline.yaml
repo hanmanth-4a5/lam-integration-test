@@ -29,7 +29,7 @@ Parameters:
     Description: Path of the Github repository
   GithubBranch:
     Type: String
-    Default: main
+    Default: master
     Description: Name of the branch
 
 Resources:
