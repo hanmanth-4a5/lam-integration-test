@@ -1,5 +1,5 @@
 {
  "Parameters": {
-  "S3ArtifactStore": "archives-icici"
+  "S3ArtifactStore": "lam-integration"
  }
 }  
