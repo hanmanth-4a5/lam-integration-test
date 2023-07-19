@@ -13,11 +13,11 @@
   },
   {
     "ParameterKey": "S3ArtifactStore",
-    "ParameterValue": "archives-icici"
+    "ParameterValue": "lam-integration"
   },
   {
     "ParameterKey": "GithubConnectionArn",
-    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:690379282706:connection/01bb50f3-4f37-4310-80fa-ac922ec88748"
+    "ParameterValue": "arn:aws:codestar-connections:ap-south-1:690379282706:connection/38579cdf-9dda-4584-812a-552efc3163b3"
   },
   {
     "ParameterKey": "GithubRepositoryName",
