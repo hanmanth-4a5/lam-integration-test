@@ -11,7 +11,7 @@ Resources:
   LambdaRole:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: "lam-integration-role"
+      RoleName: "lam-integration-lambda-role"
       Description: "Role assigned to lambdas"
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
